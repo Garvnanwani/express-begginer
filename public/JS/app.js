@@ -81,6 +81,7 @@ const App = () => {
               onChange={() => updateForm(event, 'name')}
               placeholder="Product name"
               className="form-control mt-3"
+              name="name"
             />
             <input
               type="text"
@@ -88,6 +89,7 @@ const App = () => {
               onChange={() => updateForm(event, 'price')}
               placeholder="Product price"
               className="form-control mt-3"
+              name="price"
             />
             <button type="submit" className="btn btn-primary mt-3">
               Submit

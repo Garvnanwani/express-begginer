@@ -13,11 +13,11 @@ Router.post('/api/products', (req, res) => {
     return res.status(422).json({ error: 'Invalid parameters' })
   }
   const prod = {
-    name: name,
-    price: price,
+    name,
+    price,
     id: new Date().getTime().toString(),
   }
-  product.push(prod)
+  products.push(prod)
   console.log(req.body)
   res.json(prod)
 })
