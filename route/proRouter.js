@@ -17,6 +17,7 @@ Router.post('/api/products', (req, res) => {
     price,
     id: new Date().getTime().toString(),
   }
+  console.log(prod)
   products.push(prod)
   console.log(req.body)
   res.json(prod)

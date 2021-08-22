@@ -24,6 +24,7 @@ const App = () => {
     if (!form.name || !form.price) {
       return
     }
+    console.log(form)
     fetch('/api/products', {
       method: 'POST',
       headers: {
